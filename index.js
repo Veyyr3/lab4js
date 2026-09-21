@@ -1,3 +1,5 @@
+// 1 задание: счетчик
+
 // поле где увеличиваем или уменьшаем число
 let counter = document.getElementById('counter_info');
 // число-счетчик
@@ -33,4 +35,35 @@ function check(){
     } else if (number < 0) {
         counter.style.color = "red" // красный если меньше 0
     }
+}
+
+// 2 задание: лото
+let loto = document.getElementById('loto');
+
+// функция для генерации случайного числа
+function getRandomInt(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+// 6 числе
+let n1 = 0
+let n2 = 0
+let n3 = 0
+let n4 = 0
+let n5 = 0
+let n6 = 0
+
+// функция для генерации 6 чисел
+function generate() {
+    let n1 = String(getRandomInt(1, 99)).padStart(2, '0')
+    let n2 = String(getRandomInt(1, 99)).padStart(2, '0')
+    let n3 = String(getRandomInt(1, 99)).padStart(2, '0')
+    let n4 = String(getRandomInt(1, 99)).padStart(2, '0')
+    let n5 = String(getRandomInt(1, 99)).padStart(2, '0')
+    let n6 = String(getRandomInt(1, 99)).padStart(2, '0')
+
+    // все 6 чисел через пробел в один текст
+    loto.innerText = `${n1} ${n2} ${n3} ${n4} ${n5} ${n6}`
 }

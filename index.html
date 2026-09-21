@@ -7,14 +7,21 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- число увеличивать, уменьшать, обнулить -->
     <div>
-        <p class="white_text" id="counter_info">число</p>
+        <p class="white_text" id="counter_info">0</p>
 
         <div>
             <button onclick="next()">Next</button>
             <button onclick="reset()">Reset</button>
             <button onclick="back()">Back</button>
         </div>
+    </div>
+
+    <!-- Лото -->
+    <div>
+        <p class="white_text" id="loto">Лото</p>
+        <button onclick="generate()">генерировать</button>
     </div>
 
     <script src="index.js"></script>
