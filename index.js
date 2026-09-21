@@ -65,5 +65,14 @@ function generate() {
     let n6 = String(getRandomInt(1, 99)).padStart(2, '0')
 
     // все 6 чисел через пробел в один текст
-    loto.innerText = `${n1} ${n2} ${n3} ${n4} ${n5} ${n6}`
+    loto.innerHTML = `
+    <div style="display: inline-flex; align-items: center; justify-content: center; height: 50px; margin: 5px; gap: 10px;">
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n1}</div> 
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n2}</div> 
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n3}</div> 
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n4}</div> 
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n5}</div>
+        <div style="padding: 20px; border-radius: 50%; border: 1px solid #ccc; background-color: blue;">${n6}</div>
+    </div>
+    `
 }
