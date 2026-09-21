@@ -1,7 +1,9 @@
+/* черный фон */
 body {
     background-color: black;
 }
 
+/* белый текст */
 .white_text {
     color: white;
 }
